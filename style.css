@@ -2,22 +2,27 @@
   margin: 0px;
   padding: 0px;
 }
+.main {
+  height: 4867px;
+}
 section {
-  width: 1920px;
+  width: 100%;
 }
 .banner-container {
   display: flex;
-  column-gap: 97px;
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 5%;
   justify-content: space-around;
   height: 850px;
-  width: 1920px;
   align-items: center;
-  background-color: rgba(229, 84, 115, 0.1);
   flex-shrink: 0;
 }
+.banner {
+  background-color: rgba(229, 84, 115, 0.1);
+}
 .banner-text-container {
-  width: 634px;
-
+  flex: 50%;
   flex-shrink: 0;
   color: rgba(39, 39, 39, 0.6);
   font-family: Lato;
@@ -31,11 +36,13 @@ section {
   gap: 32px;
 }
 .banner-img {
-  padding-top: 50px;
-  padding-right: 200px;
-  width: 635px;
-  height: 800px;
+  padding-top: 125px;
+  padding-right: 10px;
+  width: 100%;
+  height: auto;
+  flex: 50%;
   flex-shrink: 0;
+  transform: scale(1.5);
 }
 .title {
   display: flex;
@@ -55,15 +62,13 @@ section {
   border: none;
   color: white;
   border-radius: 5px;
-  margin-top: 32px;
 }
 
 .offer-container {
   display: flex;
   column-gap: 97px;
   justify-content: space-around;
-  height: 850px;
-  width: 1920px;
+  height: 620px;
   align-items: center;
   background-color: rgba(229, 84, 115, 0.1);
   flex-shrink: 0;
@@ -75,6 +80,7 @@ section {
   width: 70%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .offer-text-container {
   width: 100%;
@@ -88,7 +94,7 @@ section {
   line-height: 30px;
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 .offer-img {
@@ -123,9 +129,18 @@ section {
   border: none;
   color: white;
   border-radius: 5px;
-  margin-top: 32px;
+}
+.off {
+  color: #e55473;
 }
 
+.image-group-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 80%;
+  margin: 3% auto;
+}
 .image-group-text-title {
   text-align: center;
   color: #272727;
@@ -147,29 +162,35 @@ section {
   font-weight: 400;
   line-height: 30px;
 }
-.image-group-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2%;
-  width: 80%;
-  margin: 5% auto;
-}
+
 .image-group-item {
   width: 100%;
-  height: 396px;
+  height: 300px;
+  display: flex;
 }
 
-.subcription-container {
+.subscription-container {
   display: flex;
   flex-direction: column;
   background-image: url("./flower-shop-assignment-main/Rectangle\ 9.png");
   background-repeat: no-repeat;
-  height: 4867px;
+  height: 400px;
   width: 80%;
   margin: 5% auto;
   gap: 2%;
+  align-items: center;
+  justify-content: center;
 }
-.subcription-titile {
+.subscription-text-container {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.subscription-title {
   color: #272727;
   text-align: center;
   font-family: Lato;
@@ -178,9 +199,7 @@ section {
   font-weight: 800;
   line-height: normal;
 }
-.subcription-titile {
-}
-.subcription-subtitle {
+.subscription-subtitle {
   color: rgba(39, 39, 39, 0.6);
   text-align: center;
   font-family: Lato;
@@ -189,20 +208,20 @@ section {
   font-weight: 400;
   line-height: 30px;
 }
-.subcription-form {
+.subscription-form {
   margin: 5% auto;
 }
-.subcription-input {
+.subscription-input {
   text-align: left;
-  width: 700px;
-  height: 64px;
+  width: 500px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 8px;
   background: #fff;
 }
-.subcription-button {
+.subscription-button {
   width: 150px;
-  height: 64px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 8px;
   background: #e55473;
@@ -212,4 +231,34 @@ section {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.flowershop-container {
+  width: 100%;
+  background-color: black;
+  height: 420px;
+}
+.flowershop-text-container {
+}
+.flowershop-title {
+  color: white;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  padding-top: 150px;
+}
+.flowershop-description {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+.copywrite {
+  text-align: center;
+  color: #554848;
+  padding-top: 20px;
+}
+.flower {
+  color: #e55473;
 }
